@@ -1,0 +1,54 @@
+<br>
+<br>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <img class="rounded img-fluid img-thumbnail" src="assets/images/gaming.png" alt="">
+
+        </div>
+        <div class="col-md-8">
+
+            <h2>Registro de Clientes</h2>
+
+            <form name="registro" method="POST">
+                <div class="form-group mb-4">
+                    <br>
+                    <label for="nombre" class="">Nombre</label>
+                    <input type="text" name="nombrec" id="nombrec" class="form-control" placeholder="Ingresa Tu Nombre" required>
+                </div>
+                <div class="form-group mb-4">
+                    <br>
+                    <label for="apellido" class="">Apellido</label>
+                    <input type="text" name="apellidoc" id="apellidoc" class="form-control" placeholder="Ingresa Tu Apellido" required>
+                </div>
+                <div class="form-group mb-4" >
+                    <br>
+                    <label for="email" class="">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Correo electrónico" required>
+                </div>
+                <div class="form-group mb-4" >
+                    <br>
+                    <label for="fecha" class="">Año de Nacimiento</label>
+                    <input type="text" name="fechac" id="fechac" class="form-control" placeholder="2020" required>
+                </div>
+                <div class="form-group mb-4" >
+                    <br>
+                    <label for="sexo" class="">Sexo</label>
+                    <input type="text" name="sexoc" id="sexoc" class="form-control" placeholder="F or M" required>
+                </div>
+                <div class="form-group mb-4">
+                    <br>
+                    <label for="password" class="">Contraseña</label>
+                    <input type="password" name="password1" id="password1" class="form-control" placeholder="Contraseña" required>
+                  </div>
+                  <div class="form-group mb-4">
+                    <input type="password" name="password2" id="password2" class="form-control" placeholder="Repite la Contraseña" required>
+                  </div>
+                
+                <button (click)="registrado()" name="clientes" id="clientes" class="btn btn-block clientes-btn mb-4">Registrarse</button>
+            </form>
+                
+        </div>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login Template</title>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  
+</head>
+
+<body>
+  <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+    <div class="container">
+      <div class="card login-card">
+        <div class="row no-gutters">
+          <div class="col-md-5">
+            <img src="https://preview.redd.it/y454cut93n121.png?width=960&crop=smart&auto=webp&s=11ab9b7ef32b3d300ad8c07ea90957af54d6c057" alt="login" class="login-card-img">
+          </div>
+          <div class="col-md-7" style="text-align: center;">
+            <div class="card-body" >
+              <div class="brand-wrapper">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAUVBMVEX///8AAAC7u7tWVlbV1dVLS0uGhoalpaXc3Nx9fX2bm5vPz8+CgoK0tLSLi4vMzMzs7OxRUVH19fVCQkLCwsJOTk5zc3OqqqqVlZW3t7c3NzfLGu+mAAADgElEQVR4nO3dC3LaQBAEUKP4EweCHBuTz/0PmlCyUghpd2eWFZnudB8A1avp0YrCmLs7bz5tQOKWSRguEkoYPxJKGD8SShg/Ekr4kfvq12mQ7Ru3sH/nnmH/jbulpfmhC/P7hy8s9xNb2JtPq+pL/FNh/2D1YQo9PkShdf9QhV4fmtB2PuAKLec7stDfTyxh3fxwhDX7hySs7SeK0P58hincup5f8IS+5zM84XX7F1/YxhdXeM35gCBsNb+owpa+iMIW98/Iwnb7F1PYtp8BhYf2vmDCTkIJJZRQQgkllFBCCSV0CA/0wuMzu/B5U0dEEm529MIqIpawpqhgwgoimtBfVDihm4gn9BYVUOicIqLQR4QUuoixhNNPiNJCzy7GEt5vz9K/poWOKcYS5jIV2omwQnNRcYVWIrDQWFRkoY0ILTQVFVtomSK40EBEF5aLCi8sEvGFpaISCAtEHOEufb1sUW8h3D02yD73t2k54i2Ea1ziIpmikggzRBZhuqg0wuQUeYQpIpEwUVQm4TKRSrhYVC7hEpFMuFBUNuF8inTCGZFPeEkkFG46duEX9hleAPmEl0A64QzIJpwDyYQLQC7hEpBKuAhkEi4DiYQJII8wBaQRJoEswjTwJsKnFvme+855Bsjx2VMOCCRMf36YBTII80ACYQGILywB4YVFILqwDAQXGoDYQgsQWmgCIgttQGChEYgrtAKDCQ9fz/OSEZqBwYTm78zYgcGE1u89OYCYQg8QUugCIgp9QEChE4gn9ALhhG4gmtAPBBNWALGENUAoYRUQSHj8UfeaOMLa/4uFI6yNhBJKKKGEEkoooYQSSiihhBJKKKGEEkoooYQSSri+8OfnFnkKLAwcCSWMHwkljB8JJYwfCf9j4Qq/oL1OqoXHt4fWef8VSrhGVvjl8f1L+bI3TPN3wMF8zYWPr+VL3jhNheHmd0pDYUhfQ2HAfg5pJNxH9TUSBu3nkAbC0L4GwrD7N+ZKYfD5nXKVEMB3lTDw/fM81UIQX7UQop9DqoRAviph+PNhGrcQZv/GOIVQ/RziEgL6XEKw/RtjFkLO7xSjENZnFMLdP89jEEL7DELgfg4pCOF9BSHo+TBNRgi+f2OSQoJ+DkkIaXwJIcX+jVkQEs3vlJmQzDcTUvVzyERIcj5M0xH3c0hH7vsrJNy/MR31/E7pyH1/hCveP38Divp27HHbakYAAAAASUVORK5CYII=" alt="logo" class="logo">
+              </div>
+              <p class="login-card-description">Ingrese su cuenta</p>
+              <form  name="login" method="POST" >
+                  <div class="form-group" >
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Correo electrónico" required>
+                  </div>
+                  <div class="form-group mb-4">
+                    <label for="password" class="sr-only">Password</label>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Contraseña" required>
+                  </div>
+                  <!-- <input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Login"> -->
+                  <button (click)="gohome()" name="login" id="login" class="btn btn-block login-btn mb-4">Entrar</button>
+                </form>
+                <a href="#!" class="forgot-password-link">Perdiste tu contraseña?</a>
+                <p class="login-card-footer-text">Aun no estas registrado? <a href="Registro" class="text-reset">Registrate aquí</a></p>
+                <nav class="login-card-footer-nav">
+                  <a href="#!">Terminos de uso</a><br>
+                  <a href="#!">Politicas de privacidad</a>
+                </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>
+
+
